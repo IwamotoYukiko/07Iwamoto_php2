@@ -1,0 +1,164 @@
+.wrap {
+    max-width: 800px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: #fafafa;
+    padding: 10px 30px;
+}
+
+/* 共通 */
+
+nav{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.nav_btn{
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: orange;
+    color: #FFF;
+    border-bottom: 4px solid #d37800;
+    border-radius: 4px;
+}
+
+.nav_btn:hover{
+    transform: translate(2px,2px);
+    border-bottom: none;
+    background: orange;
+    opacity: 0.8;
+}
+
+.top {
+    background: url(topimg.jpg);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    background: rgba(255,255,255,0.5);
+    padding: 10px;
+}
+
+/* 収支記録 */
+
+h2{
+    margin: 5px;
+}
+
+.main {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.total{
+    margin: 10px auto; 
+    border-bottom: dotted 1px gray;
+    padding: 0 20px;
+}
+
+.total_price {
+    font-size: 50px;
+    margin: 0;
+}
+
+.rank {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.more{
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: .3s ease;
+}
+
+.morefix:target +  .more{
+    max-height: 99999px;
+    transform: scaleY(1);
+}
+.morefix{
+    position: fixed;
+    top: 0;
+}
+
+.btn_day {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: gray;
+    color: #FFF;
+    border-bottom: 4px solid silver;
+    border-radius: 4px;
+}
+
+.btn_day :hover{
+    transform: translate(2px,2px);
+    border-bottom: none;
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+  }
+  
+  a:hover {
+    background-color: silver;
+  }
+
+/* 投票フォームラベル */
+
+label{
+    padding: 5px 9px;
+    margin: 0;
+    color: #fff;
+}
+
+.white {
+    background-color: #ebebeb;
+}
+
+.gray {
+    background-color: #505050;
+}
+
+.red{
+    background-color: #f04141;
+}
+
+.blue {
+    background-color: #4184d0;
+}
+
+.yellow {
+    background-color: #ece962;
+}
+
+.green {
+    background-color: #54b74d;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+input:hover + label{
+    opacity: 0.6;
+    transform: translate(2px,2px);
+}
+
+input:checked + label {
+    opacity: 0.6;
+    transform: translate(2px,2px);
+    border:  outset;
+  }
